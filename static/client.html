@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>Robot Camera</title></head>
+<body>
+  <h1>Live Robot Stream</h1>
+  <video id="video" autoplay playsinline controls muted></video>
+  <script>
+    const pc = new RTCPeerConnection();
+
+    pc.ontrack = function(event) {
+      const video = document.getElementById("video");
+      video.srcObject = event.streams[0];
+    };
+
+    async function start() {
+      const offer = await pc.createOffer();
+      await pc.setLocalDescription(offer);
+
+      const response = await fetch("/offer", {
+        method: "POST",
+        body: JSON.stringify({
+          sdp: pc.localDescription.sdp,
+          type: pc.localDescription.type
+        }),
+        headers: { "Content-Type": "application/json" }
+      });
+
+      const answerSDP = await response.text();
+      const answer = new RTCSessionDescription({
+        sdp: answerSDP,
+        type: "answer"
+      });
+      await pc.setRemoteDescription(answer);
+    }
+
+    start();
+  </script>
+</body>
+</html>
