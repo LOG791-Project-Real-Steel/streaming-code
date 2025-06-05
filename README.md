@@ -41,3 +41,6 @@ Feel free to explore and modify the code to suit your specific video processing 
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+### INSTRUCTIONS MAX
+Dans le code tu veras un fichier video qui se fait jouer il faut juste que tu changes le path a ton fichier video et le renommer.
