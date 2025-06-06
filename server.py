@@ -7,15 +7,11 @@ import base64
 async def process_video(websocket):
     try:
         print("Client connected.")
+        print("Opening webcam stream...")
 
-        video_link = await websocket.recv()
-        if not video_link:
-            raise ValueError("Empty video link received")
-        print("Received video link:", video_link)
-
-        cap = cv2.VideoCapture(video_link)
+        cap = cv2.VideoCapture(0)
         if not cap.isOpened():
-            raise IOError("Failed to open video file: " + video_link)
+            raise IOError("Failed to open webcam stream")
 
         frame_count = 0
         isProcessing = False

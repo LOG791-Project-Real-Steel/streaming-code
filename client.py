@@ -14,10 +14,10 @@ async def receive_and_display_frames():
             async with websockets.connect(uri) as websocket:
                 print("Connected to the server.")
 
-                # Send the video file link to the server
-                video_link = "C:/Users/MaxenceLord/LOG791/Streaming_Code/test_video.mkv"
-                await websocket.send(video_link)
-                print(f"Sent video link: {video_link}")
+                # # Send the video file link to the server
+                # video_link = "C:/Users/MaxenceLord/LOG791/Streaming_Code/test_video.mkv"
+                # await websocket.send(video_link)
+                # print(f"Sent video link: {video_link}")
 
                 while True:
                     if is_processing:
