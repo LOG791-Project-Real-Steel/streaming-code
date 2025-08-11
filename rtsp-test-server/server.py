@@ -3,7 +3,6 @@ import websockets
 import cv2
 import base64
 
-
 async def process_video(websocket):
     try:
         print("Client connected.")
@@ -55,7 +54,6 @@ async def main():
     async with websockets.serve(process_video, "localhost", 8080):
         print("WebSocket server started.")
         await asyncio.Future()  # Run forever
-
 
 if __name__ == "__main__":
     asyncio.run(main())

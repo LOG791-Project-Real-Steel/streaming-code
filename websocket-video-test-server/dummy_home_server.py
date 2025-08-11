@@ -8,7 +8,7 @@ import base64
 # Resolve the absolute path to the "video" folder
 VIDEO_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "video")
 PORT = 8765
-FPS = 30  # control stream rate
+FPS = 30  # controls stream rate
 
 async def send_video(websocket):
     while True:
