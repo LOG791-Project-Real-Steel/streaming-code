@@ -50,18 +50,18 @@ Allowed Max to test video playback on the oculus quest 2 while developping the i
 > [!NOTE]
 > This script runs the server that receives the video link from the client, processes each frame, and sends the processed frames back to the client.
 
-   ```bash
-   python3 server.py
-   ```
+```bash
+python3 server.py
+```
 
 3. Run the client script:
 
 > [!NOTE]
 > This script connects to the server, sends the video link to the server, receives the processed frames, and displays them using OpenCV.
 
-   ```bash
-   python3 client.py
-   ```
+```bash
+python3 client.py
+```
 
 ## 2. Websocket Video Test Server (`websocket-video-test-server`)
 
