@@ -47,8 +47,8 @@ Allowed Max to test video playback on the oculus quest 2 while developping the i
 
 2. Run the server script:
 
-   > [!NOTE]
-   > This script runs the server that receives the video link from the client, processes each frame, and sends the processed frames back to the client.
+> [!NOTE]
+> This script runs the server that receives the video link from the client, processes each frame, and sends the processed frames back to the client.
 
    ```bash
    python3 server.py
@@ -56,8 +56,8 @@ Allowed Max to test video playback on the oculus quest 2 while developping the i
 
 3. Run the client script:
 
-   > **Note**
-   > This script connects to the server, sends the video link to the server, receives the processed frames, and displays them using OpenCV.
+> [!NOTE]
+> This script connects to the server, sends the video link to the server, receives the processed frames, and displays them using OpenCV.
 
    ```bash
    python3 client.py
