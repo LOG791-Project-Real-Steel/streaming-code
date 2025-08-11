@@ -81,14 +81,14 @@ python3 client.py
 > To test the streaming with a static video that loops non-stop, run the `dummy_home_server.py` script. It's mostly helpful to test that the video doesn't lag without having to be in front of the camera and moving.
 
 2. Either run the first one:
-   ```bash
-   python3 dummy_webcam_home_server.py
-   ```
+```bash
+python3 dummy_webcam_home_server.py
+```
 
    or, the second one:
-   ```bash
-   python3 dummy_home_server.py
-   ```
+```bash
+python3 dummy_home_server.py
+```
 
 3. Then, simply connect to it on port `8765` via localhost.
 
