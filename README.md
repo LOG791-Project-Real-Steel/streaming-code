@@ -94,4 +94,4 @@ python3 dummy_home_server.py
 
 ---
 
-> Made with care by @Funnyadd, @ImprovUser, @cjayneb and @RaphaelCamara :heart:.
+> Made with care by [@Funnyadd](https://github.com/Funnyadd), [@ImprovUser](https://github.com/ImprovUser), [@cjayneb](https://github.com/cjayneb) and [@RaphaelCamara](https://github.com/RaphaelCamara) ❤️
